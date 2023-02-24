@@ -1,0 +1,174 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid #b2b8c2;
+  /* min-height: 6rem; */
+  min-height: 10vh;
+  width: 85vw;
+  padding-left: 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.searchBar {
+  height: 2.5rem;
+  width: 20rem;
+  background-color: #ffffff;
+  border: 1px solid var(--gray);
+  border-radius: 26px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding: 0px 3rem;
+  font-size: 18px;
+  
+}
+ 
+.searchBar:focus {
+  /* background-color: lightblue; */
+  outline: 1px solid var(--blue);
+}
+
+.firstDiv {
+  display: flex;
+  align-items: center;
+  width: 25rem;
+  min-height: 10vh;
+}
+
+.secondDiv {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  border-left: 0.1px solid var(--gray);
+  width: 25rem;
+  min-height: 10vh;
+  padding-left: 1.5rem;
+  user-select: none;
+}
+
+.secondDivHover:hover {
+  background-color: var(--lightBlue);
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.searchBar::placeholder {
+  font-size: 18px;
+  opacity: 80%;
+}
+
+.loginButton {
+  border: none;
+  width: 70%;
+  height: 2.5rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(15, 15, 15, 0.3) 0px 1px 2px 0px,
+    rgba(21, 91, 145, 0.15) 0px 1px 3px 1px;
+}
+
+.profileAvatar {
+  color: var(--lightBlue);
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+
+  height: 3rem;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+
+.userName {
+  text-align: center;
+
+  font-size: 95%;
+}
+
+.logOutMenu {
+  font-size: 1rem;
+  position: absolute;
+  width: 20%;
+  height: 2.5rem;
+  background-color: var(--white);
+  background-color: rgb(245, 154, 154);
+  bottom: -3rem;
+  right: 0%;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.logOutMenu:hover {
+  opacity: 90%;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+/*==================
+TABLET MEDIA QUERIES
+********************/
+@media screen and (max-width: 768px) {
+
+  .secondDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10%;
+    border-left: 0.1px solid var(--gray);
+    width: 25rem;
+    height: 100%;
+    padding-left: 1.5rem;
+    user-select: none;
+  }
+
+  .searchBar {
+    width: 13rem;
+    margin-right: 10px;
+  }
+
+  .userName {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-size: 95%;
+  }
+
+  .loginButton {
+    margin-right: 2rem;
+  }
+}
+
+
+
+/*==================
+CELLPHONE MEDIA QUERIES
+********************/
+@media only screen and (max-width: 480px) {
+  .searchBar {
+    width: 5rem;
+    margin-right: 10px;
+  }
+
+  .loginButton {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+}

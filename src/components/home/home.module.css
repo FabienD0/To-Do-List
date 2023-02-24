@@ -1,0 +1,248 @@
+.container {
+  display: flex;
+  text-align: center;
+  min-height: 85vh;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.firstDivison {
+  width: 95%;
+}
+.secondDivision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  
+}
+
+.containerH1 {
+  width: 100%;
+  
+}
+
+.h1 {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--darkBlue);
+}
+
+.lengthTodo {
+  opacity: 50%;
+  font-size: 24px;
+}
+
+.containerNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+ 
+}
+
+.note,.noteFavorite {
+  background: var(--white);
+  border: 1px solid #b2b8c2;
+  border-radius: 20px;
+  min-width: 15rem;
+  max-width: 15rem;
+  height: 15rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  font-size: 24px;
+}
+
+.noteFavorite {
+  border: 2.5px solid #e09999;
+}
+
+.noteTitle {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0px 10px;
+  text-align: center;
+
+  border-radius: 30px 30px 0px 0px;
+  background-color: var(--white);
+  cursor: default;
+}
+
+.containerTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  border-bottom: 0.1px solid var(--gray);
+  
+}
+
+.noteDescription {
+  position: relative;
+  width: 100%;
+  height: 55%;
+  border-bottom: 0.1px solid var(--gray);
+  font-size: 18px;
+  font-family: inherit;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: var(--white);
+  resize: none;
+  cursor: default;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.noteDescription:focus {
+  outline: none;
+}
+
+.containerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  height: 18%;
+}
+
+.containerIcon > img {
+  cursor: pointer;
+}
+
+.rightArrow { 
+}
+
+.modifyIcon, .modifyIconNoUser {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.createdSpan {
+  opacity: 50%;
+  font-size: 1rem;
+}
+
+.iconHover:hover {
+  transform: scale(1.15);
+
+} 
+
+.tooltip {
+  position: relative;
+}
+
+
+.tooltip:hover::after {
+  position: absolute;
+  content:"Log in for this feature.";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -45px;
+  left: -90px;
+  background-color: var(--darkBlue);
+  color:var(--white);
+  width: 12rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 80%;
+  
+  ;
+}
+
+.modifyIconNoUser {
+  opacity: 40%;
+}
+
+.tooltipModify:hover::after {
+  position: absolute;
+  content:"Log in for this feature.";
+  display: flex;
+  top:-30px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkBlue);
+  color:var(--white);
+  width: 12rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 80%;
+  ;
+}
+/*==================
+OVERFLOW NOTE MEDIA QUERIES
+********************/
+@media screen and (max-width: 896px) {
+  .note,.noteFavorite {
+    height: 12rem;
+  }
+
+  .noteDescription {
+    height: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 662px) {
+  .noteTitle {
+    font-size: 16px;
+  }
+
+  .modifyIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .note,.noteFavorite {
+    height: 12rem;
+  min-width: 10rem;
+  max-width: 10rem;
+
+  }
+
+  .noteDescription {
+    height: 50%;
+  }
+  
+}
+/*==================
+TABLET MEDIA QUERIES
+********************/
+@media screen and (max-width: 768px) {
+  .modifyIcon, .modifyIconNoUser {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    margin: 10px;
+    opacity: 70%;
+    cursor: pointer;
+  }
+  
+  .modifyIconNoUser {
+    opacity: 40%;
+  }
+}
+
+/*==================
+CELLPHONE MEDIA QUERIES
+********************/
+@media only screen and (max-width: 480px) {
+  .containerNote {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
+    gap: 1rem;
+   
+  }
+}

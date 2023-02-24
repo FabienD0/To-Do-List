@@ -1,0 +1,13 @@
+.mainContainer {
+  display: flex;
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  gap: 2em;
+}
+
+.containerMid {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+}

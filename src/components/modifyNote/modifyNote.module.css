@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+  width: 93%;
+  margin: 0px auto;
+  gap: 2em;
+}
+
+.h1 {
+  margin: 15px 0px;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--darkBlue);
+}
+
+.containerNote {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.note {
+  background: var(--white);
+  border: 1px solid #b2b8c2;
+  border-radius: 20px;
+  min-width: 25rem;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 24px;
+}
+
+.noteTitle {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0px 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  border-radius: 30px 30px 0px 0px;
+  background-color: var(--white);
+  cursor: default;
+  color: var(--darkBlue);
+}
+
+.noteTitle > option {
+  color: var(--darkBlue);
+}
+
+.containerTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  border-bottom: 0.1px solid var(--gray);
+}
+
+.noteDescription {
+  position: relative;
+  width: 100%;
+  height: 65%;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: var(--white);
+  border: none;
+  border-bottom: 0.1px solid var(--gray);
+  resize: none;
+  overflow: auto;
+}
+
+.noteDescription:focus {
+  outline: none;
+}
+
+.containerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  height: 18%;
+}
+
+.containerIcon > img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .note {
+    min-width: 15rem;
+  }
+
+}
