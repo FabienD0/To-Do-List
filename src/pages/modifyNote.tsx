@@ -49,7 +49,7 @@ const ModifyNote = () => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: user?.email, id: id, description: descriptionText, categorie: categorie })
+            body: JSON.stringify({ email: user?.name, id: id, description: descriptionText, categorie: categorie })
         };
 
         await fetch("/api/todo/modifyNote", requestOptions)
