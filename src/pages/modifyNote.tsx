@@ -27,7 +27,7 @@ const ModifyNote = () => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: user?.email, id: id })
+            body: JSON.stringify({ email: user?.name, id: id })
         }
         if (!isLoading && user) {
             fetch(`/api/todo/getOne`, requestOptions)
