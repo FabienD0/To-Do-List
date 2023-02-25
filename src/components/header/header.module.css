@@ -117,6 +117,12 @@
   opacity: 90%;
 }
 
+
+.loginButton:hover {
+  transform: scale(1.05);
+  opacity: 90%;
+}
+
 .arrowUp {
   transform: rotate(180deg);
 }
