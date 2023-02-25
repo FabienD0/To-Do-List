@@ -9,6 +9,11 @@ export const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
 })
 
+type ComponentProps = React.PropsWithChildren<{
+  index: any;
+  value: any;
+}> & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+
 
 
 export default function App({ Component, pageProps }: AppProps) {

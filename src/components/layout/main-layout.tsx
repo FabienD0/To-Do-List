@@ -13,7 +13,8 @@ export const roboto = Roboto({
 
 
 interface Props {
-  children: ReactElement;
+  children: ReactElement,
+  className: string,
 }
 
 const MainLayout: FC<Props> = ({ children }: any) => {
