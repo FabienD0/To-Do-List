@@ -51,6 +51,8 @@ export const HomePage: FC<Props> = ({ searchResultState }) => {
     }
   }, [router])
 
+  console.log(user)
+
 
   /*========================
   GET ToDos From Server
