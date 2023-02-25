@@ -33,7 +33,7 @@ const CreateNote = ({ result }: any) => {
   const handleSend = async () => {
     //Body to send
     const postBody = {
-      email: user?.email,
+      email: user?.name,
       id: v4(),
       categories: categorie,
       created: fullDate,
