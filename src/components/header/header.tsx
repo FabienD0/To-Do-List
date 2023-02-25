@@ -57,8 +57,6 @@ export const Header: FC<Props> = ({ searchResultState }) => {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
 
-  console.log(user);
-
   return (
     <header className={styles.container}>
       <div className={styles.firstDiv}>
