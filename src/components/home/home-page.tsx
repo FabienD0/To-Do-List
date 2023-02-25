@@ -50,10 +50,6 @@ export const HomePage: FC<Props> = ({ searchResultState }) => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router])
-
-  console.log(user)
-
-
   /*========================
   GET ToDos From Server
   ========================*/
@@ -63,7 +59,7 @@ export const HomePage: FC<Props> = ({ searchResultState }) => {
       const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: user?.email, status: status, search: searchResult })
+        body: JSON.stringify({ email: user?.name, status: status, search: searchResult })
       }
       if (!isLoading && user) {
         fetch(`/api/todo/getAll`, requestOptions)
